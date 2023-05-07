@@ -1,0 +1,29 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+   }
+   
+   a {
+       color: black;
+   
+   }
+   body{
+       background-color: #8f9779;
+   }
+   
+   .btn {
+       background-color: #78866b;
+      
+   }
+   .blogpost-list {
+       border-color: #738678;
+   }
+   
+   .card {
+       color: black;
+       background-color: #a0a78d
+   }
+   
+   nav{
+       background-color: #78866b;
+       font-weight:500
+   }
