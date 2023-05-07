@@ -13,11 +13,11 @@ const seedDB = async () => {
       returning: true,
     });
     // posts
-    const blogs = await Post.bulkCreate(postData, {
+    const posts = await Post.bulkCreate(postData, {
       individualHooks: true,
       returning: true,
     });
-    // blogs
+    // comments
     const comments = await Comment.bulkCreate(commentData, {
       individualHooks: true,
       returning: true,

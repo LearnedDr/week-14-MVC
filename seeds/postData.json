@@ -1,0 +1,27 @@
+[
+    {
+        "title": "The crow",
+        "text_content": "Actually, it's a raven",
+        "user_id": 1
+    },
+    {
+        "title": "It was a Sunday",
+        "text_content": "Tommorrow I will spell better",
+        "user_id": 2
+    },
+    {
+        "title": "It was the best of times",
+        "text_content": " It was the worst of times",
+        "user_id": 3
+    },
+    {
+        "title": "A Zebra can't change it's stripes",
+        "text_content": "Zebras are jealous of unicorns",
+        "user_id": 2
+    },
+    {
+        "title": "Sandwich",
+        "text_content": "Superior to tacos",
+        "user_id": 1
+    }
+]
