@@ -1,0 +1,12 @@
+<div class="row d-flex">
+{{#each blogPosts as |blogPost|}}
+<div class="card m-3">
+  <div class="card-body">
+    <a href="/api/blogpost/{{blogPost.id}}"><h5 id="singleBlogPost" class="card-title">{{blogPost.title}}</h5></a>
+    <div class="card-title">Created by: {{user.username}} on: {{ format_date blogPost.createdAt}}</div>
+    <br>
+    <p class="card-text">{{blogPost.contents}}</p>
+  </div>
+</div>
+{{/each}}
+

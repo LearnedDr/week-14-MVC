@@ -1,0 +1,54 @@
+<div class="row">
+<div class="card mb-3">
+  <div class="card-body">
+    {{#if (userCheck viewingUser blogPost.user.id)}}
+      <button type="button" class="btn update-blog" id="update-id" updateId="{{blogPost.id}}">Update Blog</button>
+      <button type="button" class="btn delete-blog" delete-id="{{blogPost.id}}">Delete Blog</button>
+      <form class="d-none" id="update-blog-form">
+            <div class="form-group">
+                <label for="blogTitle">Update Title</label>
+                <input type="text" class="updateBlogTitleInput" id="blogTitleUpdate-{{blogPost.id}}" />
+            </div>
+            <div class="form-group">
+                <label for="blogContent">Update Content</label>
+                <textarea class="updateBlogContentInput" id="blogContentUpdate-{{blogPost.id}}" rows="3"></textarea>
+            </div>
+            <button type="button" class="btn" updateId="{{blogPost.id}}" id="submit-updated-blog">Submit</button>
+            </form>
+    {{/if}}
+    <h5 class="card-title">{{blogPost.title}}</h5>
+     <div class="card-title">Created by: {{blogPost.user.username}} on: {{ format_date blogPost.createdAt}}</div>
+    <p class="card-text">{{blogPost.contents}}</p>
+    {{#if blogPost.comments.length}}
+    <div class="comment-list">
+    {{#each blogPost.comments }}
+    {{#if (userCheck viewingUser comments.user_id)}}
+  <button type="button" class="btn update-comment" id="update-comment-id" updateCommentId="{{id}}">Update Comment</button>
+      <button type="button" class="btn delete-comment" deleteCommentId="{{id}}">Delete Comment</button>
+    {{/if}}
+         <div class="card-title">Comment by: {{user.username}} on: {{ format_date createdAt}}</div>
+    <p class="card-text">{{contents}}</p>
+    <form id="update-comment-form-{{id}}"  class="d-none">
+      <div class="form-group">
+      <label for="blogCommentLabel"><h2>Comment</h2></label>
+      <textarea class="createComment" id="commentText-update-{{id}}" rows="3"></textarea>
+      </div>
+      <button id="updateCommentSubmit" updateId="{{id}}" type="button" class="btn btn-primary">Submit</button>
+      </form>
+    {{/each}}
+    </div>
+    {{/if}}
+    </div>
+  </div>
+</div>
+<form class="comment-form">
+  <div class="form-group">
+    <label for="blogCommentLabel"><h2>Comment</h2></label>
+    <textarea class="createComment" id="commentText" rows="3"></textarea>
+  </div>
+  <button id="commentSubmit" type="button" class="btn btn-primary">Submit</button>
+</form>
+
+
+<script src="/js/singleblog.js"></script>
+<script src="/js/comment.js"></script>
