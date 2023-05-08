@@ -1,14 +1,17 @@
 [
     {
         "username": "LearnedDr",
+        "email": "LearnedDr@chang.com",
         "password": "password12"
     },
     {
         "username": "HouseOf",
+        "email": "Fred@chang.com",
         "password": "password12"
     },
     {
         "username": "FredChang",
+        "email": "chang@fred.com",
         "password": "password12"
     }
 ]

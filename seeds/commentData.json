@@ -1,26 +1,26 @@
 [
     {
-        "text_content": "Lol",
+        "contents": "Lol",
         "blog_id": 2,
         "user_id": 1
     },
     {
-        "text_content": "Never again",
+        "contents": "Never again",
         "blog_id": 5,
         "user_id": 2
     },
     {
-        "text_content": "Don't go there",
+        "contents": "Don't go there",
         "blog_id": 4,
         "user_id": 2
     },
     {
-        "text_content": "You're cool",
+        "contents": "You're cool",
         "blog_id": 3,
         "user_id": 3
     },
     {
-        "text_content": "Sick burn",
+        "contents": "Sick burn",
         "blog_id": 4,
         "user_id": 1
     }
